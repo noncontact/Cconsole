@@ -32,10 +32,10 @@ int main()
 			break;
 		case EXIT:
 			EscapeWhile=FALSE;
-			printf("\n\t ½Ã½ºÅÛÀ» Á¾·áÇÕ´Ï´Ù. Áñ°Å¿î ÇÏ·ç µÇ½Ê¼î!!\n\n");
+			printf("\n\t ì‹œìŠ¤í…œì„ ì¢…ë£Œí•©ë‹ˆë‹¤. ì¦ê±°ìš´ í•˜ë£¨ ë˜ì‹­ì‡¼!!\n\n");
 			break;
 		default:
-			printf("Àß¸ø ÀÔ·Â ÇÏ¼Ì½À´Ï´Ù.    ´Ù½Ã ÀÔ·ÂÇØÁÖ½Ê½Ã¿À.\n\n");
+			printf("ì˜ëª» ì…ë ¥ í•˜ì…¨ìŠµë‹ˆë‹¤.    ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì‹­ì‹œì˜¤.\n\n");
 		}//switch
 		system("pause");
 	}
@@ -50,17 +50,17 @@ int Displaymenu(){
 
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t        ³ë·¡ ¸ñ·Ï °ü¸® ÇÁ·Î±×·¥\n");
+	printf("\t        ë…¸ë˜ ëª©ë¡ ê´€ë¦¬ í”„ë¡œê·¸ë¨\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t            1. ÀÔ·Â\n");
-	printf("\t            2. °Ë»ö\n");
-	printf("\t            3. Ãâ·Â\n");
-	printf("\t            4. Á¦°Å\n");
-	printf("\t            5. ¼±È£µµ ¼öÁ¤\n");
-	printf("\t            6. ¸ñ·Ï ÃÊ±âÈ­\n");
-	printf("\t            7. Á¦ÀÛÀÚ\n");
+	printf("\t            1. ì…ë ¥\n");
+	printf("\t            2. ê²€ìƒ‰\n");
+	printf("\t            3. ì¶œë ¥\n");
+	printf("\t            4. ì œê±°\n");
+	printf("\t            5. ì„ í˜¸ë„ ìˆ˜ì •\n");
+	printf("\t            6. ëª©ë¡ ì´ˆê¸°í™”\n");
+	printf("\t            7. ì œì‘ì\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t            0. Á¾·á\n");
+	printf("\t            0. ì¢…ë£Œ\n");
 	printf("\t***************************************\n");
 	printf("\t   >>");
 	scanf("%d",&nMenu);
@@ -78,25 +78,25 @@ void Insertmenu(){
 
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t               ÀÔ·Â ¸Å´º\n");
+	printf("\t               ì…ë ¥ ë§¤ë‰´\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             1. ÄÜ¼Ö ÀÔ·Â\n");
-	printf("\t             2. ÆÄÀÏ ºÒ·¯¿À±â\n");
+	printf("\t             1. ì½˜ì†” ì…ë ¥\n");
+	printf("\t             2. íŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             0. µ¹¾Æ°¡±â\n");
+	printf("\t             0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t  >>");
 	scanf("%d",&Insertselect);
 
 	if(Insertselect ==0){
-		printf("\t ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+		printf("\t ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 		return;
 	}
 	else if(Insertselect ==CONSOL_IN)
 		Insertconsol();
 	else if(Insertselect == FILE_IN)
 		Insertfile();
-	else printf("\t Á¦´ë·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+	else printf("\t ì œëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 }
 void Insertconsol(){
 
@@ -109,13 +109,13 @@ void Insertconsol(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t      ¿øÇÏ´Â À§Ä¡¿¡ ÀÔ·ÂÇØ ÁÖ¼¼¿ä!!\n");
+	printf("\t      ì›í•˜ëŠ” ìœ„ì¹˜ì— ì…ë ¥í•´ ì£¼ì„¸ìš”!!\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t           1. Á¦ÀÏ ¾Õ\n");  
-	printf("\t           2. »ç¿ëÀÚ ÁöÁ¤ À§Ä¡\n");
-	printf("\t           3. Á¦ÀÏ ³¡\n");
+	printf("\t           1. ì œì¼ ì•\n");  
+	printf("\t           2. ì‚¬ìš©ì ì§€ì • ìœ„ì¹˜\n");
+	printf("\t           3. ì œì¼ ë\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             0. µ¹¾Æ°¡±â\n");
+	printf("\t             0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t      >>");
 	scanf("%d",&consol);
@@ -124,32 +124,32 @@ void Insertconsol(){
 	if(consol>=FIRST && consol<=LAST) {
 
 		pInput= (SongList *)malloc(sizeof(SongList)); 
-	    printf("\t  ³ë·¡Á¦¸ñ >>");
+	    printf("\t  ë…¸ë˜ì œëª© >>");
 		fflush(stdin);
 		gets(pInput->chSongname);
 	    //scanf("%s",(pInput->chSongname));
-		printf("\t  °¡¼ö >>");
+		printf("\t  ê°€ìˆ˜ >>");
 		fflush(stdin);
 		gets(pInput->chSinger);
 	    //scanf("%s",(pInput->chSinger));
 		pVisited = pHeader;
 		while(pVisited !=NULL){
 			if((strcmp(pInput->chSongname,pVisited->chSongname)==0)&&(strcmp(pInput->chSinger,pVisited->chSinger)==0)){
-				printf("\n\t  **ÀÌ¹Ì ÀÖ´Â ³ë·¡ÀÔ´Ï´Ù. ¸ÅÀÎ ¸Å´º·Î µ¹¾Æ°©´Ï´Ù.**\n\n");
+				printf("\n\t  **ì´ë¯¸ ìˆëŠ” ë…¸ë˜ì…ë‹ˆë‹¤. ë§¤ì¸ ë§¤ë‰´ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.**\n\n");
 				free(pInput);
 				return;
 			}
 			pVisited=pVisited->link;
 		}
-		printf("\t  Àå¸£ >>");
+		printf("\t  ì¥ë¥´ >>");
 	    scanf("%s",(pInput->chJanre));
 		while(TRUE){
-		    printf("\t  ¼±È£µµ[1~5](¼Ò¼öÁ¡ Ã¹Â°ÀÚ¸®±îÁö¸¸ ÀÔ·Â) >>");
+		    printf("\t  ì„ í˜¸ë„[1~5](ì†Œìˆ˜ì  ì²«ì§¸ìë¦¬ê¹Œì§€ë§Œ ì…ë ¥) >>");
 	        scanf("%lf",&(pInput->lfPreference));
 		    if(pInput->lfPreference>=1&&pInput->lfPreference<=5){
 				break;
 			}
-		    printf("\t  [1~5] »çÀÌ ¼øÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.(ÀÔ·Â ¼ıÀÚ %.1lf)\n",pInput->lfPreference);
+		    printf("\t  [1~5] ì‚¬ì´ ìˆœìë¥¼ ì…ë ¥í•˜ì„¸ìš”.(ì…ë ¥ ìˆ«ì %.1lf)\n",pInput->lfPreference);
 		}
 	    pInput->link=NULL;
 
@@ -159,25 +159,25 @@ void Insertconsol(){
 
 		        pInput->link = pHeader;
 		        pHeader = pInput;
-				printf("\t    Á¦ÀÏ ¾ÕÀ¸·Î ÀÔ·ÂµÌ½À´Ï´Ù.\n");
+				printf("\t    ì œì¼ ì•ìœ¼ë¡œ ì…ë ¥ë«ìŠµë‹ˆë‹¤.\n");
 		        break;
 
 	        case RANDOM:
 		        if(pHeader==NULL){
 
 			      pHeader =pInput;
-			      printf("\n\t    ¸ñ·ÏÀÌ ºñ¾ú½À´Ï´Ù. Ã¹¹øÂ°·Î ÀÔ·Â‰ç½À´Ï´Ù. \n");
+			      printf("\n\t    ëª©ë¡ì´ ë¹„ì—ˆìŠµë‹ˆë‹¤. ì²«ë²ˆì§¸ë¡œ ì…ë ¥Â‰ç‡Ÿìœ±æ±‚. \n");
 		        }else{
-			        printf("\n\t        À§Ä¡>>");
+			        printf("\n\t        ìœ„ì¹˜>>");
 			        scanf("%d",&position);
 
 			        if(position<=0){
-				       printf("\n\t   ÀÔ·Â À§Ä¡´Â%dth ÀÔ´Ï´Ù\n",position);    
-				       printf("\t          ÀÎ½Ä µÇÁö¾Ê´Â À§Ä¡ÀÔ´Ï´Ù!!\n");
+				       printf("\n\t   ì…ë ¥ ìœ„ì¹˜ëŠ”%dth ì…ë‹ˆë‹¤\n",position);    
+				       printf("\t          ì¸ì‹ ë˜ì§€ì•ŠëŠ” ìœ„ì¹˜ì…ë‹ˆë‹¤!!\n");
 			        }else if(position==1){
 				        pInput->link=pHeader;
 				        pHeader= pInput;
-				        printf("\n\t        Á¦ÀÏ ¾Õ¿¡ ÀÔ·Â‰ç½À´Ï´Ù.\n");
+				        printf("\n\t        ì œì¼ ì•ì— ì…ë ¥Â‰ç‡Ÿìœ±æ±‚.\n");
 			        }
 			        else{
 				       pVisited = pHeader;
@@ -191,9 +191,9 @@ void Insertconsol(){
 				       pPrev->link = pInput;
 
 				       if(pVisited == NULL){
-					      printf("\n\t          ÀÎ½Ä¹üÀ§°¡ ¾Æ´Õ´Ï´Ù , Á¦ÀÏ ³¡¿¡ ÀÔ·ÂµÆ½À´Ï´Ù.\n");
+					      printf("\n\t          ì¸ì‹ë²”ìœ„ê°€ ì•„ë‹™ë‹ˆë‹¤ , ì œì¼ ëì— ì…ë ¥ëìŠµë‹ˆë‹¤.\n");
 				       }else{
-					       printf("\n\t         %dth¿¡ ÀÔ·Â ‰ç½À´Ï´Ù.\n",position);
+					       printf("\n\t         %dthì— ì…ë ¥ Â‰ç‡Ÿìœ±æ±‚.\n",position);
 				       }
 
 			        }
@@ -213,7 +213,7 @@ void Insertconsol(){
 		            }  
 		            pInput->link=pVisited->link;
 		            pVisited->link=pInput;
-					printf("\n\t         ¸¶Áö¸·¿¡ ÀÔ·Â‰ç½À´Ï´Ù!!\n");
+					printf("\n\t         ë§ˆì§€ë§‰ì— ì…ë ¥Â‰ç‡Ÿìœ±æ±‚!!\n");
 		            break;
 			        
 	           }
@@ -232,15 +232,15 @@ void Insertfile(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t       BINARYÆÄÀÏ ºÒ·¯¿À±â!!\n");
+	printf("\t       BINARYíŒŒì¼ ë¶ˆëŸ¬ì˜¤ê¸°!!\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
 	printf("\n");
-	printf("\t     BINARYÆÄÀÏ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä >>");
+	printf("\t     BINARYíŒŒì¼ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” >>");
 	scanf("%s",FileName);
 
 	fpIn=fopen(FileName,"rb");
 	if(fpIn == NULL){
-		printf("\t    (%s)ÆÄÀÏÀ» ºÒ·¯¿Ã¼ö ¾ø½À´Ï´Ù.\n",FileName);
+		printf("\t    (%s)íŒŒì¼ì„ ë¶ˆëŸ¬ì˜¬ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n",FileName);
 		return;
 	}
 
@@ -278,10 +278,10 @@ void Insertfile(){
 		}
 	}
 	if(Count==0){
-	  printf("\t      (%s)ÆÄÀÏÀ» ¼º°øÀûÀ¸·Î ºÒ·Á¿Ô½À´Ï´Ù!!\n",FileName);
+	  printf("\t      (%s)íŒŒì¼ì„ ì„±ê³µì ìœ¼ë¡œ ë¶ˆë ¤ì™”ìŠµë‹ˆë‹¤!!\n",FileName);
 	}
 	else{
-		printf("\t      %dÀÇ ¸ñ·ÏÀÌ Áßº¹µÇ¾ú ½À´Ï´Ù.\n\t  ±×¿Ü (%s)ÆÄÀÏÀ» ¼º°øÀûÀ¸·Î ºÒ·Á¿Ô½À´Ï´Ù!!\n",FileName);
+		printf("\t      %dì˜ ëª©ë¡ì´ ì¤‘ë³µë˜ì—ˆ ìŠµë‹ˆë‹¤.\n\t  ê·¸ì™¸ (%s)íŒŒì¼ì„ ì„±ê³µì ìœ¼ë¡œ ë¶ˆë ¤ì™”ìŠµë‹ˆë‹¤!!\n",FileName);
 	}
 	fclose(fpIn);
 }
@@ -293,31 +293,31 @@ void Retrievemenu(){
 	system("cls");
 	printf("\n\n");
 	if(pHeader == NULL){
-		printf("\t         ¸ñ·ÏÀÌ ºñ¾î ÀÖ½À´Ï´Ù!!\n\n");
+		printf("\t         ëª©ë¡ì´ ë¹„ì–´ ìˆìŠµë‹ˆë‹¤!!\n\n");
 		return;
 	}
 
 	
 	printf("\t***************************************\n");
-	printf("\t               °Ë»ö ¸Å´º\n");
+	printf("\t               ê²€ìƒ‰ ë§¤ë‰´\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             1. ³ë·¡ °Ë»ö\n");
-	printf("\t             2. ¼±È£µµ °Ë»ö\n");
+	printf("\t             1. ë…¸ë˜ ê²€ìƒ‰\n");
+	printf("\t             2. ì„ í˜¸ë„ ê²€ìƒ‰\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             0. µ¹¾Æ°¡±â\n");
+	printf("\t             0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t  >>");
 	scanf("%d",&Retrieveselect);
 
 	if(Retrieveselect ==0){
-		printf("\t ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+		printf("\t ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 		return;
 	}
 	else if(Retrieveselect ==SONG)
 		Retrievesongname();
 	else if(Retrieveselect == PREFER)
 		Retrieveprefer();
-	else printf("\t Á¦´ë·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+	else printf("\t ì œëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 }
 void Retrievesongname(){
 	SongList *pVisited;
@@ -327,11 +327,11 @@ void Retrievesongname(){
 	pVisited=pHeader;
 	system("cls");
 	printf("\n\n");
-	printf("\t   Ã£±â ¿øÇÏ´Â ³ë·¡ Á¦¸ñÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä>>");
+	printf("\t   ì°¾ê¸° ì›í•˜ëŠ” ë…¸ë˜ ì œëª©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”>>");
 	fflush(stdin);
 	gets(Songname);
 	printf("\t***************************************\n");
-	printf("\t  Á¦¸ñ     °¡¼ö     Àå¸£     ¼±È£µµ\n");
+	printf("\t  ì œëª©     ê°€ìˆ˜     ì¥ë¥´     ì„ í˜¸ë„\n");
 	printf("\t***************************************\n");
 	while(pVisited!=NULL){
 		if(strcmp(Songname,pVisited->chSongname)==0){
@@ -341,8 +341,8 @@ void Retrievesongname(){
 		}
 		pVisited=pVisited->link;
 	}
-	if(nCount == FALSE)printf("\n\t Ã£À¸½Ã´Â ³ë·¡°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
-	else printf("\n\t °Ë»ö °á°ú°¡ ÃÑ %d°Ç Á¶È¸ µÆ½À´Ï´Ù.\n",nCount);
+	if(nCount == FALSE)printf("\n\t ì°¾ìœ¼ì‹œëŠ” ë…¸ë˜ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
+	else printf("\n\t ê²€ìƒ‰ ê²°ê³¼ê°€ ì´ %dê±´ ì¡°íšŒ ëìŠµë‹ˆë‹¤.\n",nCount);
 
 }
 void Retrieveprefer(){
@@ -353,10 +353,10 @@ void Retrieveprefer(){
 	pVisited=pHeader;
 	system("cls");
 	printf("\n\n");
-	printf("\t   Ã£±â ¿øÇÏ´Â ¼±È£µµ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä>>");
+	printf("\t   ì°¾ê¸° ì›í•˜ëŠ” ì„ í˜¸ë„ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>>");
 	scanf("%d",&nPrefer);
 	printf("\t***************************************\n");
-	printf("\t  Á¦¸ñ     °¡¼ö     Àå¸£     ¼±È£µµ\n");
+	printf("\t  ì œëª©     ê°€ìˆ˜     ì¥ë¥´     ì„ í˜¸ë„\n");
 	printf("\t***************************************\n");
 	while(pVisited!=NULL){
 		if(nPrefer<=(pVisited->lfPreference)&&((nPrefer+1)>(pVisited->lfPreference))){
@@ -366,8 +366,8 @@ void Retrieveprefer(){
 		}
 		pVisited=pVisited->link;
 	}
-	if(nCount == FALSE)printf("\n\t Ã£À¸½Ã´Â ³ë·¡°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.\n");
-	else printf("\n\t °Ë»ö °á°ú°¡ ÃÑ %d°Ç Á¶È¸ µÆ½À´Ï´Ù.\n",nCount);
+	if(nCount == FALSE)printf("\n\t ì°¾ìœ¼ì‹œëŠ” ë…¸ë˜ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\n");
+	else printf("\n\t ê²€ìƒ‰ ê²°ê³¼ê°€ ì´ %dê±´ ì¡°íšŒ ëìŠµë‹ˆë‹¤.\n",nCount);
 
 }
 
@@ -378,29 +378,29 @@ void Printmenu(){
 
 	printf("\n\n");
 	if(pHeader == NULL){
-		printf("\t         ¸ñ·ÏÀÌ ºñ¾î ÀÖ½À´Ï´Ù!!\n\n");
+		printf("\t         ëª©ë¡ì´ ë¹„ì–´ ìˆìŠµë‹ˆë‹¤!!\n\n");
 		return;
 	}
 	printf("\t***************************************\n");
-	printf("\t               Ãâ·Â ¸Å´º\n");
+	printf("\t               ì¶œë ¥ ë§¤ë‰´\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             1. ÄÜ¼Ö Ãâ·Â\n");
-	printf("\t             2. ÆÄÀÏ ÀúÀåÇÏ±â\n");
+	printf("\t             1. ì½˜ì†” ì¶œë ¥\n");
+	printf("\t             2. íŒŒì¼ ì €ì¥í•˜ê¸°\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             0. µ¹¾Æ°¡±â\n");
+	printf("\t             0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t  >>");
 	scanf("%d",&Printselect);
 
 	if(Printselect ==0){
-		printf("\t ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+		printf("\t ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 		return;
 	}
 	else if(Printselect ==CONSOL_IN)
 		Printconsol();
 	else if(Printselect == FILE_IN)
 		Printfile();
-	else printf("\t Á¦´ë·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+	else printf("\t ì œëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 }
 void Printconsol(){
 	int nMenu;
@@ -408,12 +408,12 @@ void Printconsol(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t            ÄÜ¼Ö Ãâ·Â ¸Å´º\n");
+	printf("\t            ì½˜ì†” ì¶œë ¥ ë§¤ë‰´\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             1. ÀÔ·Â¼ø Ãâ·Â\n");
-	printf("\t             2. ¼±È£µµ¼ø Ãâ·Â\n");
+	printf("\t             1. ì…ë ¥ìˆœ ì¶œë ¥\n");
+	printf("\t             2. ì„ í˜¸ë„ìˆœ ì¶œë ¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t            0. µ¹¾Æ°¡±â\n");
+	printf("\t            0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t    >>");
 	scanf("%d",&nMenu);
@@ -424,17 +424,17 @@ void Printconsol(){
 		PCunordered();
 	else if(nMenu == PREFER)
 		PCprefer();
-	else printf("\t Á¦´ë·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+	else printf("\t ì œëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 }
 void PCunordered(){
 	SongList *pVisited;
 
-	system("cls");//²Ù¹Ì±â
-	printf("\n\n");//²Ù¹Ì±â
+	system("cls");//ê¾¸ë¯¸ê¸°
+	printf("\n\n");//ê¾¸ë¯¸ê¸°
 	printf("\t***************************************\n");
-	printf("\t             ÀÔ·Â¼ø Ãâ·Â\n");
+	printf("\t             ì…ë ¥ìˆœ ì¶œë ¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t  Á¦¸ñ     °¡¼ö     Àå¸£     ¼±È£µµ\n");
+	printf("\t  ì œëª©     ê°€ìˆ˜     ì¥ë¥´     ì„ í˜¸ë„\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
 	pVisited = pHeader;
 	while(pVisited!=NULL){
@@ -450,9 +450,9 @@ void PCprefer(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t             ÀÔ·Â¼ø Ãâ·Â\n");
+	printf("\t             ì…ë ¥ìˆœ ì¶œë ¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t  Á¦¸ñ     °¡¼ö     Àå¸£     ¼±È£µµ\n");
+	printf("\t  ì œëª©     ê°€ìˆ˜     ì¥ë¥´     ì„ í˜¸ë„\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
 	while(a>0){
 		
@@ -474,12 +474,12 @@ void Printfile(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t             ÆÄÀÏ ÀúÀå¸Å´º\n");
+	printf("\t             íŒŒì¼ ì €ì¥ë§¤ë‰´\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t             1. ÀÔ·Â¼ø ÀúÀå\n");
-	printf("\t             2. ¼±È£µµ¼ø ÀúÀå\n");
+	printf("\t             1. ì…ë ¥ìˆœ ì €ì¥\n");
+	printf("\t             2. ì„ í˜¸ë„ìˆœ ì €ì¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
-	printf("\t            0. µ¹¾Æ°¡±â\n");
+	printf("\t            0. ëŒì•„ê°€ê¸°\n");
 	printf("\t***************************************\n");
 	printf("\t    >>");
 	scanf("%d",&nMenu);
@@ -490,7 +490,7 @@ void Printfile(){
 		PFunordered();
 	else if(nMenu == PREFER)
 		PFprefer();
-	else printf("\t Á¦´ë·Î ÀÔ·ÂÇØ ÁÖ½Ê½Ã¿À. ÃÊ±âÈ­¸éÀ¸·Î µ¹¾Æ°©´Ï´Ù.\n");
+	else printf("\t ì œëŒ€ë¡œ ì…ë ¥í•´ ì£¼ì‹­ì‹œì˜¤. ì´ˆê¸°í™”ë©´ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.\n");
 
 }
 void PFunordered(){
@@ -501,14 +501,14 @@ void PFunordered(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t             ÀÔ·Â¼ø Ãâ·Â\n");
+	printf("\t             ì…ë ¥ìˆœ ì¶œë ¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
 	printf("\n");
-	printf("\t BINARYÆÄÀÏ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä>>"); 
+	printf("\t BINARYíŒŒì¼ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”>>"); 
 	scanf("%s",FileName);
 	fpOut=fopen(FileName,"wb");
 	if(fpOut ==NULL){
-		printf("\t    (%s)ÆÄÀÏÀ» ºÒ·¯¿Ã¼ö ¾ø½À´Ï´Ù.\n",FileName);
+		printf("\t    (%s)íŒŒì¼ì„ ë¶ˆëŸ¬ì˜¬ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n",FileName);
 		return;
 	}
 	pVisited=pHeader;
@@ -516,7 +516,7 @@ void PFunordered(){
 		fwrite(pVisited,sizeof(SongList),1,fpOut);
 		pVisited = pVisited->link;
 	}
-	printf("\t (%s)ÆÄÀÏÀ» ¼º°øÀûÀ¸·Î ÀúÀå Çß½À´Ï´Ù!!\n",FileName);
+	printf("\t (%s)íŒŒì¼ì„ ì„±ê³µì ìœ¼ë¡œ ì €ì¥ í–ˆìŠµë‹ˆë‹¤!!\n",FileName);
 	fclose(fpOut);
 }
 void PFprefer(){
@@ -528,14 +528,14 @@ void PFprefer(){
 	system("cls");
 	printf("\n\n");
 	printf("\t***************************************\n");
-	printf("\t             ¼±È£µµ¼ø Ãâ·Â\n");
+	printf("\t             ì„ í˜¸ë„ìˆœ ì¶œë ¥\n");
 	printf("\t+++++++++++++++++++++++++++++++++++++++\n");
 	printf("\n");
-	printf("\t BINARYÆÄÀÏ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä>>"); 
+	printf("\t BINARYíŒŒì¼ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”>>"); 
 	scanf("%s",FileName);
 	fpOut=fopen(FileName,"wb");
 	if(fpOut ==NULL){
-		printf("\t    (%s)ÆÄÀÏÀ» ºÒ·¯¿Ã¼ö ¾ø½À´Ï´Ù.\n",FileName);
+		printf("\t    (%s)íŒŒì¼ì„ ë¶ˆëŸ¬ì˜¬ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n",FileName);
 		return;
 	}
 	for(i=5;i>0;i--){
@@ -547,7 +547,7 @@ void PFprefer(){
 		    pVisited = pVisited->link;
 	    }
 	}
-	printf("\t (%s)ÆÄÀÏÀ» ¼º°øÀûÀ¸·Î ÀúÀå Çß½À´Ï´Ù!!\n",FileName);
+	printf("\t (%s)íŒŒì¼ì„ ì„±ê³µì ìœ¼ë¡œ ì €ì¥ í–ˆìŠµë‹ˆë‹¤!!\n",FileName);
 	fclose(fpOut);
 }
 void Removemenu(){
